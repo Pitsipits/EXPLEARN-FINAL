@@ -1,0 +1,52 @@
+<ion-view>
+  <ion-content class = "login"> 
+ <div class="card">
+      <div class="item item-icon-right">
+	  <br>
+ <center><h1><font face="comic sans ms"> CONTACT US <h1></center>   
+<br>				
+	  <br>
+  <h3 class=" ion-ios-telephone-outline" > 09486397600
+  </h3>    <br>
+ 
+   <h3 class="ion-android-mail" >  explearn2017@yahoo.com</h3>
+   <br>
+ 
+<h3 class="ion-ios-location-outline"> East Tapinac Sports Complex,Donor Street<br>
+  &nbsp; &nbsp;East Tapinac, Olongapo City <br>
+
+  <br>
+  <br>
+<br>
+ </div>
+</div>
+<center><h1><font face="comic sans ms"> FEEDBACK <h1></center>
+				<br>
+ <div class="row responsive-md" ng-controller="contactus">
+ <div class="col col-50 col-offset-25">
+
+<form ng-submit="loginform()">
+<label class="item item-input">
+
+    <input type="text" ng-model="name" placeholder ="Last Name, First Name" required>
+  </label>
+  <label class="item item-input">
+    
+    <input type="text" ng-model="email" placeholder = "email" required>
+  </label>
+  <label class="item item-input">
+   
+   <textarea name="comment" ng-model ="message" placeholder ="Enter Message" form="usrform"></textarea>
+
+
+  </label>
+ 
+  
+  <button type="submit"class="button button-block button-positive"> Submit</button> 
+  <div class="col text-center">
+                        
+</form>
+</div>
+					
+ </ion-view>
+</ion-content>

@@ -1,0 +1,11 @@
+<ion-view view-title="Local Places">
+ <ion-content padding="true" scroll="false" class="hospital" >
+	<label class="item item-input">
+		<i class="icon ion-ios-search placeholder-icon"></i>
+		<input type="text" placeholder="Search Music" ng-model="search">
+   </label>
+	<div class="list" >
+		<div class="item item-icon-right" ng-repeat="item in items | filter: search">
+		{{item}}<br>{{address}}
+		 </div>
+	</div>

@@ -1,0 +1,16 @@
+<ion-view view-title="Local Places" hide-back-button="true" cache-view="false">
+  <ion-content class = "login">
+    <ion-list>
+	<label class="item item-input">
+		<i class="icon ion-ios-search placeholder-icon"></i>
+		<input type="text" placeholder="Search Local Hospitals" ng-model="search">
+   </label> 
+      <ion-item ng-repeat="place in vm.places | filter: search" class="item-avatar" ui-sref="app.place({place_id: place.place_id})">
+        <img ng-src="{{place.icon}}" />
+        <h2>{{place.name}}</h2>
+        <p>{{place.formatted_address}}</p>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll on-infinite="vm.load()" ng-if="vm.canLoad" immediate-check="false"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

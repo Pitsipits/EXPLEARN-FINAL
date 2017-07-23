@@ -1,0 +1,36 @@
+<ion-view id="login" hide-nav-bar="true">
+    <ion-content padding="true" scroll="true" class="login" >
+<!-- <img src="" width="130px"> -->
+ <div class="header padding text-center">
+                        <img src="img/logo1.png"  width="150" height="150" alt="Your logo here"/>
+                    </div>
+<br>
+<br>
+<br>
+<br>
+       
+<div class="row responsive-md" ng-controller="login">
+ <div class="col col-50 col-offset-25">
+
+<form ng-submit="loginform()">
+  <label class="item item-input">
+  
+    <input type="text" ng-model="username" placeholder = "Username">
+  </label>
+  <label class="item item-input">
+
+    <input type="password" ng-model="password" placeholder = "Password" required>
+  </label>
+  <button type="submit"class="button button-block button-positive">
+  Submit
+</button> 
+ <div class="row row-no-padding">
+                        
+                        <div class="col text-center">
+                         <a href="#/signup">  <button class="button button-clear button-light" >
+                                Sign up
+                            </button></a>
+</form>
+</div>
+</ion-view>
+</ion-content>
